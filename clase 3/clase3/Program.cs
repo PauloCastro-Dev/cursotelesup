@@ -61,30 +61,33 @@ internal class Program
             Console.WriteLine("El numero es impar");
         }*/
 
-        //int primerNumero;
-        //int segundoNumero;
-        //int tercerNumero;
-        //Console.WriteLine("");
-        //Console.WriteLine("============================");
-        //Console.WriteLine("Cual es el numero mayor de 3 numeros ");
-        //Console.WriteLine("============================");
-        //primerNumero = Convert.ToInt32(Console.ReadLine());
-        //segundoNumero = Convert.ToInt32(Console.ReadLine());
-        //tercerNumero = Convert.ToInt32(Console.ReadLine());
+        int primerNumero;
+        int segundoNumero;
+        int tercerNumero;
+        Console.WriteLine("");
+        Console.WriteLine("============================");
+        Console.WriteLine("Cual es el numero mayor de 3 numeros ");
+        Console.WriteLine("============================");
+        primerNumero = Convert.ToInt32(Console.ReadLine());
+        segundoNumero = Convert.ToInt32(Console.ReadLine());
+        tercerNumero = Convert.ToInt32(Console.ReadLine());
 
-        //int mayorNumero = primerNumero;
+        string mayorNumeroString = "Primer";
+        int mayorNumero = primerNumero;
 
-        //if (segundoNumero > mayorNumero)
-        //{
-        //    mayorNumero = segundoNumero;
-        //}
+        if (segundoNumero > mayorNumero)
+        {
+            mayorNumeroString = "Segundo";
+            mayorNumero = segundoNumero;
+        }
 
-        //if (tercerNumero > mayorNumero)
-        //{
-        //    mayorNumero = tercerNumero;
-        //}
+        if (tercerNumero > mayorNumero)
+        {
+            mayorNumeroString = "Tercer";
+            mayorNumero = tercerNumero;
+        }
 
-        //Console.WriteLine("El numero mayor es: " + mayorNumero);
+        Console.WriteLine($"El numero mayor es el {mayorNumeroString} numero: {mayorNumero}");
 
         // Escribir la logica del programa
 
