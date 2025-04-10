@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase4", "Clase4.csproj", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayMultiDimension", "..\ArrayMultiDimension\ArrayMultiDimension.csproj", "{5E55F362-3C6E-4CBD-B2B6-534E44685469}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepasoPatrones", "..\RepasoPatrones\RepasoPatrones.csproj", "{A2C80053-CCCD-4766-8964-C386B16B33A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{5E55F362-3C6E-4CBD-B2B6-534E44685469}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E55F362-3C6E-4CBD-B2B6-534E44685469}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E55F362-3C6E-4CBD-B2B6-534E44685469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2C80053-CCCD-4766-8964-C386B16B33A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C80053-CCCD-4766-8964-C386B16B33A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C80053-CCCD-4766-8964-C386B16B33A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C80053-CCCD-4766-8964-C386B16B33A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
