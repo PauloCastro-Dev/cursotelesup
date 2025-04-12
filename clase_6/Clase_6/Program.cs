@@ -4,3 +4,4 @@ using Clase_6;
 Console.WriteLine("Hello, World!");
 Producto producto = new Producto("Laptop", 1500.00, 10, "Electronics", "LAP123", "TechCorp");
 Console.WriteLine($"Nombre: {producto.Nombre}");
+Console.ReadKey();
