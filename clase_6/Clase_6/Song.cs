@@ -15,12 +15,4 @@ public class Song
 		Description = description;
 		Genre = genre;
 	}
-	public override string ToString()
-	{
-		return $"Album: {Album}, Title: {Title}, Description: {Description}, Genre: {Genre}";
-	}
-	public string GetSongInfo()
-	{
-		return $"Album: {Album}, Title: {Title}, Description: {Description}, Genre: {Genre}";
-	}
 }
