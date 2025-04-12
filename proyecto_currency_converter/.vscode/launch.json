@@ -1,0 +1,20 @@
+{
+	"configurations": [
+		{
+			"args": [],
+			"console": "externalTerminal",
+			"cwd": "${workspaceFolder}",
+			"externalConsole": true,
+			"name": ".NET Core Launch (console)",
+			"preLaunchTask": "build",
+			"program": "${workspaceFolder}/Proyecto_currency_converter/bin/Debug/net9.0/Proyecto_currency_converter.dll",
+			"request": "launch",
+			"stopAtEntry": false,
+			"type": "coreclr"
+		}
+	],
+	// Use IntelliSense para saber los atributos posibles.
+	// Mantenga el puntero para ver las descripciones de los existentes atributos.
+	// Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0"
+}
