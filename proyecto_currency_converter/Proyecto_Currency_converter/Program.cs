@@ -5,6 +5,7 @@ class Program
 {
 	static void Main(string[] args)
 	{
+		Console.Clear();
 		// Array de monedas y sus tasas de cambio (1 unidad de la moneda base a otra moneda)
 		List<string> currencies = ["USD", "EUR", "PEN"];
 		List<double> exchangeRates = [1.0, 0.91, 3.75]; // USD -> USD, USD -> EUR, USD -> PEN
@@ -53,7 +54,8 @@ class Program
 					break;
 				case "9":
 					Console.WriteLine("Saliendo del programa...");
-					break;
+					// Console.ReadKey();
+					return;
 				default:
 					Console.WriteLine("Opción no válida. Presione cualquier tecla para continuar...");
 					Console.ReadKey();
@@ -72,6 +74,7 @@ class Program
 		}
 		Console.WriteLine("Presione cualquier tecla para volver al menú principal...");
 		Console.ReadKey();
+		Console.Clear();
 	}
 
 	static void ConvertCurrency(List<string> currencies, List<double> exchangeRates)
@@ -106,6 +109,7 @@ class Program
 
 		Console.WriteLine("Presione cualquier tecla para volver al menú principal...");
 		Console.ReadKey();
+		Console.Clear();
 	}
 
 	static void AddCurrency(List<string> currencies, List<double> exchangeRates)
@@ -131,7 +135,7 @@ class Program
 		Console.WriteLine("Nueva moneda agregada.");
 		Console.WriteLine("Presione cualquier tecla para volver al menu principal");
 		Console.ReadKey();
-
+		Console.Clear();
 	}
 
 	static void UpdateCurrency(List<string> currencies, List<double> exchangeRates)
@@ -139,9 +143,10 @@ class Program
 		Console.Clear();
 		Console.WriteLine("=== Actualizar Tasa de Cambio ===");
 		Console.WriteLine("Selecciona la moneda a actualizar");
-		foreach (string currency in currencies)
+
+		for (int i = 0; i < currencies.Count; i++)
 		{
-			Console.WriteLine(currency);
+			Console.WriteLine($"{i + 1}. {currencies[i]}");
 		}
 		Console.WriteLine("Elija la moneda a actualizar");
 		int index = int.TryParse(Console.ReadLine(), out int monedaElegida) ? monedaElegida - 1 : -1;
@@ -152,7 +157,7 @@ class Program
 		}
 		Console.WriteLine("Ingrese el nuevo simbolo de la moneda");
 		string simbolo = Console.ReadLine() ?? string.Empty;
-		if (String.IsNullOrWhiteSpace(simbolo))
+		if (string.IsNullOrWhiteSpace(simbolo))
 		{
 			Console.WriteLine("El simbolo de la moneda no puede estar vacio.");
 			return;
@@ -165,6 +170,8 @@ class Program
 				Console.WriteLine("Moneda actualizada");
 				Console.WriteLine("Presione cualquier tecla para volver al menu principal");
 				Console.ReadKey();
+				Console.Clear();
+				break;
 			}
 		}
 	}
@@ -190,6 +197,7 @@ class Program
 		Console.WriteLine("Moneda eliminada.");
 		Console.WriteLine("Presione cualquier tecla para volver al menú principal ...");
 		Console.ReadKey();
+		Console.Clear();
 	}
 
 	static void UpdateExchangeRate(List<double> exchangeRates){
@@ -219,7 +227,7 @@ class Program
 		}
 		Console.WriteLine("Presione cualquier tecla para volver al menú principal ...");
 		Console.ReadKey();
-
+		Console.Clear();
 	}
 
 	static void SearchByCurrency(List<string> currencies,List<double> exchangeRates){
@@ -227,7 +235,7 @@ class Program
 		Console.WriteLine("=== Buscar por Moneda ===");
 		Console.Write("Ingrese el simbolo de la moneda:");
 		string simbolo = Console.ReadLine() ?? string.Empty;
-		if(String.IsNullOrWhiteSpace(simbolo)){
+		if(string.IsNullOrWhiteSpace(simbolo)){
 			Console.WriteLine("El simbolo de la moneda no puede estar vacio.");
 			return;
 		}
@@ -239,6 +247,7 @@ class Program
 		Console.WriteLine($"La tasa de cambio para {simbolo} es: {exchangeRates[indexMoneda]}");
 		Console.WriteLine("Presione cualquier tecla para volver al menú principal ...");
 		Console.ReadKey();
+		Console.Clear();
 	}
 
 	static void SearchByExchangeRate(List<string> currencies, List<double> exchangeRates){
@@ -261,5 +270,6 @@ class Program
 		}
 		Console.WriteLine("Presione cualquier tecla para volver al menú principal ...");
 		Console.ReadKey();
+		Console.Clear();
 	}
 }
