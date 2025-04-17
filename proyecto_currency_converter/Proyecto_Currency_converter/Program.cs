@@ -118,7 +118,7 @@ class Program
 		Console.WriteLine("=== Agregar Moneda ===");
 		Console.Write("Ingrese el código de la nueva moneda: ");
 		string nuevaMoneda = Console.ReadLine() ?? string.Empty;
-		if (String.IsNullOrWhiteSpace(nuevaMoneda))
+		if (string.IsNullOrWhiteSpace(nuevaMoneda))
 		{
 			Console.WriteLine("El código de la moneda no puede estar vacío.");
 			return;
