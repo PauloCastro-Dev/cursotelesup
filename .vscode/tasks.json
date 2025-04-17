@@ -1,41 +1,33 @@
 {
-	"version": "2.0.0",
 	"tasks": [
 		{
+			"args": ["build", "${workspaceFolder}/clase_8/Clase_8.sln", "/property:GenerateFullPaths=true", "/consoleloggerparameters:NoSummary;ForceNoAlign"],
+			"command": "dotnet",
+			"label": "build-clase-8",
+			"problemMatcher": "$msCompile",
+			"type": "process"
+		},
+		{
+			"args": ["build", "${workspaceFolder}/proyecto_currency_converter/Proyecto_Currency_converter.sln", "/property:GenerateFullPaths=true", "/consoleloggerparameters:NoSummary;ForceNoAlign"],
+			"command": "dotnet",
 			"label": "build",
-			"command": "dotnet",
-			"type": "process",
-			"args": [
-				"build",
-				"${workspaceFolder}/proyecto_currency_converter/Proyecto_Currency_converter.sln",
-				"/property:GenerateFullPaths=true",
-				"/consoleloggerparameters:NoSummary;ForceNoAlign"
-			],
-			"problemMatcher": "$msCompile"
+			"problemMatcher": "$msCompile",
+			"type": "process"
 		},
 		{
+			"args": ["publish", "${workspaceFolder}/proyecto_currency_converter/Proyecto_Currency_converter.sln", "/property:GenerateFullPaths=true", "/consoleloggerparameters:NoSummary;ForceNoAlign"],
+			"command": "dotnet",
 			"label": "publish",
-			"command": "dotnet",
-			"type": "process",
-			"args": [
-				"publish",
-				"${workspaceFolder}/proyecto_currency_converter/Proyecto_Currency_converter.sln",
-				"/property:GenerateFullPaths=true",
-				"/consoleloggerparameters:NoSummary;ForceNoAlign"
-			],
-			"problemMatcher": "$msCompile"
+			"problemMatcher": "$msCompile",
+			"type": "process"
 		},
 		{
-			"label": "watch",
+			"args": ["watch", "run", "--project", "${workspaceFolder}/proyecto_currency_converter/Proyecto_Currency_converter.sln"],
 			"command": "dotnet",
-			"type": "process",
-			"args": [
-				"watch",
-				"run",
-				"--project",
-				"${workspaceFolder}/proyecto_currency_converter/Proyecto_Currency_converter.sln"
-			],
-			"problemMatcher": "$msCompile"
+			"label": "watch",
+			"problemMatcher": "$msCompile",
+			"type": "process"
 		}
-	]
+	],
+	"version": "2.0.0"
 }

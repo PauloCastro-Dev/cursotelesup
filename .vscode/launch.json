@@ -1,26 +1,33 @@
 {
-	"version": "0.2.0",
 	"configurations": [
 		{
+			"args": [],
+			// Para obtener más información sobre el campo \"consola\", consulte https://aka.ms/VSCode-CS-LaunchJson-Console
+			"console": "internalConsole",
+			"cwd": "${workspaceFolder}/proyecto_currency_converter/Proyecto_Currency_converter",
 			// Use IntelliSense para averiguar qué atributos existen para la depuración de C#.
 			// Usar el puntero por encima para la descripción de los atributos existentes
 			// Para obtener más información, visite https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md
 			"name": ".NET Core Launch (console)",
-			"type": "coreclr",
-			"request": "launch",
 			"preLaunchTask": "build",
 			// Si ha cambiado las plataformas de destino, asegúrese de actualizar la ruta de acceso del programa.
 			"program": "${workspaceFolder}/proyecto_currency_converter/Proyecto_Currency_converter/bin/Debug/net9.0/Proyecto_Currency_converter.dll",
-			"args": [],
-			"cwd": "${workspaceFolder}/proyecto_currency_converter/Proyecto_Currency_converter",
-			// Para obtener más información sobre el campo \"consola\", consulte https://aka.ms/VSCode-CS-LaunchJson-Console
-			"console": "internalConsole",
-			"stopAtEntry": false
+			"request": "launch",
+			"stopAtEntry": false,
+			"type": "coreclr"
 		},
 		{
-			"name": ".NET Core Attach",
-			"type": "coreclr",
-			"request": "attach"
+			"args": [],
+			"console": "externalTerminal",
+			"cwd": "${workspaceFolder}",
+			"externalConsole": true,
+			"name": "Clase 8 - .NET Core Launch (console)",
+			"preLaunchTask": "build-clase-8",
+			"program": "${workspaceFolder}/clase_8/Clase_8/bin/Debug/net9.0/Clase_8.dll",
+			"request": "launch",
+			"stopAtEntry": false,
+			"type": "coreclr"
 		}
-	]
+	],
+	"version": "0.2.0"
 }
