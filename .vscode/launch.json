@@ -27,6 +27,18 @@
 			"request": "launch",
 			"stopAtEntry": false,
 			"type": "coreclr"
+		},
+		{
+			"args": [],
+			"console": "externalTerminal",
+			"cwd": "${workspaceFolder}",
+			"externalConsole": true,
+			"name": "Clase 9 - .NET Core Launch (console)",
+			"preLaunchTask": "build-clase-9",
+			"program": "${workspaceFolder}/clase_9/Clase_9/bin/Debug/net9.0/Clase_9.dll",
+			"request": "launch",
+			"stopAtEntry": false,
+			"type": "coreclr"
 		}
 	],
 	"version": "0.2.0"

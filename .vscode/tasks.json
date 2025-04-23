@@ -1,6 +1,13 @@
 {
 	"tasks": [
 		{
+			"args": ["build", "${workspaceFolder}/clase_9/Clase_9.sln", "/property:GenerateFullPaths=true", "/consoleloggerparameters:NoSummary;ForceNoAlign"],
+			"command": "dotnet",
+			"label": "build-clase-9",
+			"problemMatcher": "$msCompile",
+			"type": "process"
+		},
+		{
 			"args": ["build", "${workspaceFolder}/clase_8/Clase_8.sln", "/property:GenerateFullPaths=true", "/consoleloggerparameters:NoSummary;ForceNoAlign"],
 			"command": "dotnet",
 			"label": "build-clase-8",
