@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "clase_9", "clase_9", "{B047
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase_9", "Clase_9\Clase_9.csproj", "{70593709-B1B9-4195-B1AF-F9D89C38CD9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGestionTareas", "..\proyecto_sistema_tareas\SistemaGestionTareas\SistemaGestionTareas.csproj", "{536DF14C-B9EE-4D4A-AF0C-C1B54800FFE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,18 @@ Global
 		{70593709-B1B9-4195-B1AF-F9D89C38CD9E}.Release|x64.Build.0 = Release|Any CPU
 		{70593709-B1B9-4195-B1AF-F9D89C38CD9E}.Release|x86.ActiveCfg = Release|Any CPU
 		{70593709-B1B9-4195-B1AF-F9D89C38CD9E}.Release|x86.Build.0 = Release|Any CPU
+		{536DF14C-B9EE-4D4A-AF0C-C1B54800FFE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{536DF14C-B9EE-4D4A-AF0C-C1B54800FFE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{536DF14C-B9EE-4D4A-AF0C-C1B54800FFE9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{536DF14C-B9EE-4D4A-AF0C-C1B54800FFE9}.Debug|x64.Build.0 = Debug|Any CPU
+		{536DF14C-B9EE-4D4A-AF0C-C1B54800FFE9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{536DF14C-B9EE-4D4A-AF0C-C1B54800FFE9}.Debug|x86.Build.0 = Debug|Any CPU
+		{536DF14C-B9EE-4D4A-AF0C-C1B54800FFE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{536DF14C-B9EE-4D4A-AF0C-C1B54800FFE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{536DF14C-B9EE-4D4A-AF0C-C1B54800FFE9}.Release|x64.ActiveCfg = Release|Any CPU
+		{536DF14C-B9EE-4D4A-AF0C-C1B54800FFE9}.Release|x64.Build.0 = Release|Any CPU
+		{536DF14C-B9EE-4D4A-AF0C-C1B54800FFE9}.Release|x86.ActiveCfg = Release|Any CPU
+		{536DF14C-B9EE-4D4A-AF0C-C1B54800FFE9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
