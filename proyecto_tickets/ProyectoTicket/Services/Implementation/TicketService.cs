@@ -9,7 +9,7 @@ namespace ProyectoTicket.Services.Implementation
 {
     public class TicketService : ITicketService
     {
-        public List<Ticket> Tickets { get; set; } = [];
+        private List<Ticket> Tickets { get; set; } = [];
         public void Add(Ticket ticket)
         {
             Tickets.Add(ticket);
